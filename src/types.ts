@@ -8,6 +8,7 @@ interface WallDecoration {
   strokeBrightness: number;
   strokeLighting: number;
   strokeWidth: number;
+  tileScale?: number;
   foregroundUrl?: string;
 }
 
@@ -22,8 +23,8 @@ interface FloorDecoration {
   swampStrokeWidth: number;
   roadsColor: string;
   roadsBrightness: number;
-  floorForegroundUrl?: string;
   tileScale?: number;
+  floorForegroundUrl?: string;
 }
 
 export type ConfigState = {

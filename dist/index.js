@@ -30,7 +30,7 @@ const getCustomFloor = (config, location) => {
     if (!((_a = config.decorate.config) === null || _a === void 0 ? void 0 : _a.floor) || Object.keys(config.decorate.config.floor).length === 0)
         return;
     const floorConfig = config.decorate.config.floor;
-    const { floorForegroundUrl, tileScale } = floorConfig;
+    const { floorForegroundUrl } = floorConfig;
     const floor = {
         active: {
             ...floorConfig,
@@ -43,7 +43,6 @@ const getCustomFloor = (config, location) => {
             type: 'floorLandscape',
             name: 'Custom Floor',
             floorForegroundUrl: floorForegroundUrl !== null && floorForegroundUrl !== void 0 ? floorForegroundUrl : `${ASSETS_URL}season5/floor.png`,
-            tileScale: tileScale !== null && tileScale !== void 0 ? tileScale : 2,
         },
     };
     return floor;

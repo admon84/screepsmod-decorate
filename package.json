@@ -1,6 +1,6 @@
 {
   "name": "@admon-dev/screepsmod-decorate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Screeps mod for custom room decorations",
   "main": "dist/index.js",
   "scripts": {
